@@ -1,0 +1,12 @@
+*vim-recently-used.txt*   A Vim plugin to show a list with recently used files
+
+==============================================================================
+USAGE INSTRUCTIONS                                   *vim-recently-used-usage*
+
+:RecentlyUsed
+
+        Shows a list of recently used files from the current working directory
+        in the quickfix list. This command refreshes the list in the current
+        working directory, See |:cd| and |:pwd|.
+
+vim:tw=78:ts=8:ft=help:norl:
