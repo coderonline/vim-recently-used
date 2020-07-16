@@ -13,7 +13,13 @@ update the list after changing to another directory with `:cd`.
 
 This should be sufficient:
 
-    git clone https://git.entwicklerseite.de/vim-recently-used ~/.vim/pack/coderonline/start/
+    git clone https://git.entwicklerseite.de/vim-recently-used \
+        ~/.vim/pack/coderonline/start/vim-recently-used
+
+Or as submodule:
+
+    git submodule add https://git.entwicklerseite.de/vim-recently-used \
+        ~/.vim/pack/coderonline/start/vim-recently-used
 
 Or download the zip file and extract it under `~/.vim/pack/coderonline/start/`.
 
@@ -32,4 +38,3 @@ Or download the zip file and extract it under `~/.vim/pack/coderonline/start/`.
 
 * Keep it really simple
 * Make it a one liner
-
