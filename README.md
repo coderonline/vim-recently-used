@@ -13,9 +13,9 @@ update the list after changing to another directory with `:cd`.
 
 This should be sufficient:
 
-    git clone https://github.com/coderonline/vim-recently-used ~/.vim/pack/coderonline/
+    git clone https://git.entwicklerseite.de/vim-recently-used ~/.vim/pack/coderonline/start/
 
-Or download the zip file and extract it under `~/.vim/pack/coderonline`.
+Or download the zip file and extract it under `~/.vim/pack/coderonline/start/`.
 
 ## Installation using plugin managers
 
