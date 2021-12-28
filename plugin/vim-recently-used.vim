@@ -14,8 +14,8 @@ command! RecentlyUsed call setloclist(0, [])
     \  'title':'Recently used files in directory: '.getcwd(),
     \  'items':sort(map(filter(filter(mapnew(v:oldfiles[:100],
     \                                    {_, p->fnamemodify(p,':p')}),
-    \                                "fnamemodify(v:val, ':h') ==# \'" .
-    \                                    getcwd()->fnamemodify(':p:h')."\'"),
+    \                                "fnamemodify(v:val, ':h') =~? \'" .
+    \                                    getcwd()->fnamemodify(':p:h')->escape(' \')."\'"),
     \                         'filereadable(v:val)'),
     \                  {_, p->{'filename': p,
     \                          'module': printf("%s | %-*s ",
