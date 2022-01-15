@@ -12,7 +12,7 @@ command! RecentlyUsed call setloclist(0, [])
     \  | setfiletype qf
     \  | call setloclist(0, [], 'r', {
     \  'title':'Recently used files in directory: '.getcwd(),
-    \  'items':sort(map(filter(filter(mapnew(v:oldfiles[:100],
+    \  'items':sort(map(filter(filter(map(copy(v:oldfiles[:100]),
     \                                    {_, p->fnamemodify(p,':p')}),
     \                                "fnamemodify(v:val, ':h') =~? \'" .
     \                                    getcwd()->fnamemodify(':p:h')->escape(' \')."\'"),
